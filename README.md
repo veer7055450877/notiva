@@ -12,7 +12,7 @@ This project was built as part of a frontend internship challenge.
 ## 🌐 Live Demo
 
 Deployed App:
-https://notiva.vercel.app
+https://notiva-workspace.vercel.app
 
 ---
 
