@@ -4,11 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --host --port 5171",
+    "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "lint:dualite": "eslint --config eslint.dualite.config.js .",
-    "tsc:dualite": "yarn tsc -p tsconfig.dualite.json",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -26,6 +24,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.27.0",
+    "@types/chrome": "^0.1.38",
     "@types/react": "^19.1.5",
     "@types/react-dom": "^19.1.5",
     "@types/uuid": "^11.0.0",

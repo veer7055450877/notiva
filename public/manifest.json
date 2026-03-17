@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Notiva Quick Capture",
+  "version": "1.0.0",
+  "description": "Capture notes, selected text, and URLs directly into Notiva.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Capture Note"
+  },
+  "permissions": [
+    "activeTab",
+    "storage",
+    "scripting"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "host_permissions": [
+    "https://*.mockapi.io/*"
+  ]
+}
